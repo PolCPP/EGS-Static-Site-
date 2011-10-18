@@ -1,8 +1,12 @@
 /* =============================================================================
    Primary styles
-   Author: Pol Cámara
+   Author: Pol Cámara (www.soft10.es)
    ========================================================================== */
 
+
+/* =====================================
+   Basic and global styles
+   ===================================== */
 
 body{
 	font-family: Verdana, Arial, sans-serif; background: url('../img/background.png');
@@ -10,30 +14,43 @@ body{
 	color: #555;
 }
 
-h1 {
-    font-size: 35px;
-}
-
-h2 {
-    font-size: 25px;
-}
-
-h3 {
-    font-size: 20px;
-}
-
+h1 { font-size: 35px; }
+h2 { font-size: 25px; }
+h3 {font-size: 20px; }
 h1, h2, h3, h4, h5, h6 { font-family: trebuchet MS,verdana,arial,sans-serif; color: #B87DD4; font-weight:normal;}
+
+li { list-style-image: url("../img/bullet.png");}
 
 .wrapper{
 	margin:auto;
 	width:960px;
 }
 
-
-li {
-    list-style-image: url("../img/bullet.png");
-    
+#page-wrapper {
+    background: url(../img/magic_circle.jpg) no-repeat scroll 0 0 #FFFFFF;
+    border-left: 1px solid #DEDEDE;
+    border-right: 1px solid #DEDEDE;
+    clear: both;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 980px;
 }
+
+
+
+.first_bullet, .second_bullet, .third_bullet { padding-left: 48px; line-height: 38px; }
+
+.first_bullet { background: url("../img/bullet_1.jpg") no-repeat scroll 0 0 transparent; }
+
+.second_bullet { background: url("../img/bullet_2.jpg") no-repeat scroll 0 0 transparent; }
+
+.third_bullet { background: url("../img/bullet_3.jpg") no-repeat scroll 0 0 transparent; }
+
+
+/* =====================================
+   Preheader Topbar
+   ===================================== */
 
 #top_bar {
     background: none repeat scroll 0% 0% #2A2A2A; 
@@ -42,8 +59,7 @@ li {
 }
     #top_bar .wrapper {
         color: #fff; 
-        line-height: 26px;
-        
+        line-height: 26px;    
     }
 
     #top_bar a {
@@ -51,6 +67,7 @@ li {
         text-decoration: none;
         padding-top: 4px;    
     }
+    
     #top_bar a:hover {
         border-top: 2px solid white;
     }
@@ -74,11 +91,18 @@ li {
         margin-right: 5px;
     }
 
-/* End Top_bar */
+/* =====================================
+   Page header
+   ===================================== */
 
 #home_catchline {
     clear:both;
     margin-top: 10px;
+}
+
+#title {
+    display:none;
+    float:left;
 }
 
 #catchline {
@@ -92,6 +116,7 @@ li {
         color: #3b383e;
         margin-bottom: 25px;
     }
+    
     #catchline em {
         color: #555;
     }
@@ -134,32 +159,6 @@ li {
         padding-bottom: 4px;
     }
 
-#page-wrapper {
-    background: url(../img/magic_circle.jpg) no-repeat scroll 0 0 #FFFFFF;
-    border-left: 1px solid #DEDEDE;
-    border-right: 1px solid #DEDEDE;
-    clear: both;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 980px;
-}
-
-
-#header-container{
-	border-bottom:20px solid #e44d26;
-	margin-bottom:50px;
-	-webkit-box-shadow:0 40px 40px -40px #AAA;
-	   -moz-box-shadow:0 40px 40px -40px #AAA;
-	        box-shadow:0 40px 40px -40px #AAA;
-}
-
-
-#title{
-    display:none;
-    float:left;
-}
-
 header nav {
     border-bottom: 1px solid #CCCCCC;
     float: right;
@@ -188,9 +187,6 @@ header nav {
         padding-bottom: 10px;
         padding-top: 12px;    
     }
-
-/* end header nav */
-
 
 #three_features {
     margin-top: 30px;
@@ -232,13 +228,9 @@ header nav {
 
     #three_features h2 {
         margin-bottom: 10px;
+        line-height: 38px;
         margin-top: 0;
     }
-
-
-
-
-/* end three_features */
 
 
 #two_features {
@@ -265,13 +257,12 @@ header nav {
     #two_features h2 {
         margin-bottom: 12px;
         margin-top: 0;
+        line-height: 38px;
     }
-
-/* end two_features */
 
 
 #did_you_know p {
-    background: none repeat scroll 0 0 #C9F1E3;
+    background: url("../img/open_quote.png") no-repeat scroll 7px 5px, url("../img/close_quote.png") no-repeat scroll right bottom #C9F1E3;
     border: 1px solid #74CA94;
     border-radius: 10px 10px 10px 10px;
     font-size: 14px;
@@ -289,36 +280,26 @@ header nav {
         min-height: 100px;
     }
 
-/* end did_you_know */
-
-
-#main p{
-	font:16px/26px Helvetica, Helvetica Neue, Arial;
-	width:620px;
-}
-
-article header{
-	margin-bottom:50px;
-	padding-bottom:30px;
-	width:700px;
-	-webkit-box-shadow:0 45px 60px -60px #AAA;
-	   -moz-box-shadow:0 45px 60px -60px #AAA;
-	        box-shadow:0 45px 60px -60px #AAA;
+.triangle_shape {
+    background: url("../img/triangle_shape.png") repeat scroll 0 0 transparent;
+    display: inline-block;
+    float: left;
+    height: 22px;
+    left: 379px;
+    position: relative;
+    top: 18px;
+    width: 22px;
 }
 
 #footer-container{
 	background-color:#171717;
-	height:240px;
+	height:85px;
 	border-top:20px solid #2a2a2a;
-	-webkit-box-shadow:0 -40px 40px -40px #AAA;
-	   -moz-box-shadow:0 -40px 40px -40px #AAA;
-	        box-shadow:0 -40px 40px -40px #AAA;
 }
 
-#footer-container footer{
-	color:white;
-}
-
+    #footer-container footer{
+	    color:white;
+    }
 
 footer nav {
     background: url("../img/footer_logo.jpg") no-repeat scroll 0 15px transparent;
@@ -350,9 +331,6 @@ footer nav {
         content: "";
     }
     
-/* end footer nav */
-
-
 #news_photostream h3 {
     font-size: 18px;
     margin: 0;
@@ -365,14 +343,44 @@ footer nav {
 
 #news_photostream #news {
     float: left;
-    width: 470px;
+    width: 460px;
+    margin-right: 10px;
+    color: #999;
 }
 
+    #news_photostream #news em {
+        color: #3b383e;
+    }
 
-#news_photostream #photostream li {
-    list-style: none;
-    display: inline;
+
+#news_photostream #photostream {
+    float: left;
+    width: 460px;
+    margin-left: 10px;
 }
+    #news_photostream #photostream li {
+        list-style: none;
+        display: inline;
+    }
+
+    #news_photostream #photostream a:hover {
+        background: #ddceed;
+        box-shadow: 0 4px 4px -4px #B87DD4;        
+        border: 1px solid #BBB;
+
+    }
+
+    #news_photostream #photostream a {
+        border: 1px solid #CCCCCC;
+        border-radius: 5px 5px 5px 5px;
+        display: inline-block;
+        height: 58px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        padding: 4px;
+        width: 58px;
+        box-shadow: 0 4px 4px -4px #AAAAAA;        
+    }
 
 #scroll_up {
     background: none repeat scroll 0 0 #2A2A2A;
@@ -388,8 +396,6 @@ footer nav {
         background: #3a3a3a;
         border: 2px solid #4a4a4a;
     }
-
-/* End scroll_up */
 
 
 /* =============================================================================
