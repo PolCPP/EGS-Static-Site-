@@ -352,6 +352,28 @@ footer nav {
     
 /* end footer nav */
 
+
+#news_photostream h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+#news_photostream p {
+    margin: 5px 0 10px;
+}
+
+
+#news_photostream #news {
+    float: left;
+    width: 470px;
+}
+
+
+#news_photostream #photostream li {
+    list-style: none;
+    display: inline;
+}
+
 #scroll_up {
     background: none repeat scroll 0 0 #2A2A2A;
     border: 2px solid #3A3A3A;
