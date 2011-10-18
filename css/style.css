@@ -320,6 +320,55 @@ article header{
 }
 
 
+footer nav {
+    background: url("../img/footer_logo.jpg") no-repeat scroll 0 15px transparent;
+    float: left;
+    min-height: 53px;
+    padding-left: 100px;
+    padding-top: 15px;
+}
+
+    footer nav a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    footer nav a:hover {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+    
+    footer nav li {
+        display: inline;
+        list-style: none outside none;
+    }
+    
+    footer nav li:after {
+        content: " |";
+    }
+    footer nav li:last-child:after {
+        content: "";
+    }
+    
+/* end footer nav */
+
+#scroll_up {
+    background: none repeat scroll 0 0 #2A2A2A;
+    border: 2px solid #3A3A3A;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+    float: right;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+    #scroll_up:hover {
+        background: #3a3a3a;
+        border: 2px solid #4a4a4a;
+    }
+
+/* End scroll_up */
+
 
 /* =============================================================================
    Non-semantic helper classes
